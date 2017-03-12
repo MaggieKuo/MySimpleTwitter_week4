@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imgUsr"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtUserName"
+        app:srcCompat="@drawable/ic_launcher"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtBody"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtBody"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imgUsr"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtUserName"
+        android:layout_toRightOf="@+id/imgUsr"
+        android:allowUndo="false"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgUsr"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtRelativeTime"
+        android:layout_alignBottom="@+id/txtRelativeTime"
+        android:layout_toEndOf="@+id/txtUserName"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/txtRelativeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtUserName"
+        android:layout_alignBottom="@+id/txtUserName"
+        android:layout_toEndOf="@+id/txtTwitter"
+        android:layout_toRightOf="@+id/txtTwitter"
+        android:gravity="right"
+        android:text="TextView"
+        android:textColor="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/imgTweetPic"
+        android:layout_width="wrap_content"
+        android:layout_height="400px"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtBody"
+        android:layout_toEndOf="@+id/imgUsr"
+        android:layout_toRightOf="@+id/imgUsr"
+        app:srcCompat="@drawable/salad" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tweet_blue_bright">#d56beafe</color>
+    <color name="tweet_blue_dark">#02b3ef</color>
+    <color name="tweet_bluelight">#07d2fb</color>
+</resources>
